@@ -70,6 +70,16 @@ public class StringsAndThings {
         }
 
         return isCount == notCount;
+
+        /*
+        for (int i = 0; i <= input.length() - 2; i++) {
+            if (input.substring(i , i + 2).equals("is")) {
+                isCounter++; }}
+
+        for (int i = 0; i <= input.length() - 3; i++) {
+            if (input.substring(i , i + 3).equals("not")) {
+                notCounter++; }}
+         */
     }
 
     /**
@@ -90,7 +100,16 @@ public class StringsAndThings {
             }
         }
 
+        return  checker;
         /*
+        ---Carolina-----------------------
+        for (int i = 0; i <= input.length() - 2; i++) {
+            if (input.substring(i , i + 2).equals("gg")) {
+                return true; }}
+
+        return false;
+
+        ---Original -----------------------
         for (int i = 0 ; i < input.length()-1 ; i++) {
             if ((input.charAt(i) == 'g' && input.charAt(i + 1) == 'g') || (input.charAt(i) == 'g' && input.charAt(i - 1) == 'g')) {
                 checker = true;
@@ -98,11 +117,8 @@ public class StringsAndThings {
             }
            else {
                 checker = false;
-                System.out.println("input char: " + input.charAt(i));
-            }
-        }
+                System.out.println("input char: " + input.charAt(i)); }}
         */
-        return  checker;
     }
 
 
